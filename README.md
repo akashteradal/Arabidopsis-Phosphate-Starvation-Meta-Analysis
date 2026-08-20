@@ -96,7 +96,7 @@ Raw paired-end RNA-seq reads
 ↓  
 **Differential Expression Analysis** — DESeq2  
 ↓  
-**Differentially Expressed Genes** — |log₂FC| > 1.5 and padj < 0.05  
+**Differentially Expressed Genes** — Upregulated: log₂FC > +1.5; Downregulated: log₂FC < −1.5; padj < 0.05 
 ↓  
 **Meta-analysis** — InteractiVenn  
 ↓  
@@ -156,15 +156,33 @@ The chronic response showed stronger association with nutrient adaptation, phosp
 
 The functional enrichment analysis therefore supported the temporal interpretation of phosphate starvation responses obtained from the transcriptomic meta-analysis.
 
-### 5. Hypothesis and Candidate Gene: AT1G08440
 
-AT1G08440 was identified as a candidate gene associated with the long-term phosphate starvation response.
+## 5. Integrated Biological Interpretation
 
-AT1G08440 is a putative member of the ALMT family with limited functional characterization. Its consistent response across chronic phosphate-starvation datasets led to its selection as a candidate for further investigation.
+The conserved genes identified from the short-term and long-term meta-analyses were integrated with their associated biological functions to develop a temporal model of the Arabidopsis phosphate-starvation response.
 
-Based on its association with prolonged phosphate deficiency and the known importance of organic-acid-mediated phosphate mobilization, a hypothesis was proposed that AT1G08440 may contribute to phosphate acquisition through malate-mediated rhizosphere phosphate mobilization.
+### Short-term Response
 
-This proposed function remains a hypothesis and requires experimental validation. Future studies involving qRT-PCR, CRISPR-Cas9-based functional characterization, and physiological analysis of phosphate acquisition would be required to determine the biological role of AT1G08440.
+The short-term response represents the early transcriptional adjustment to phosphate deficiency. Conserved genes were associated with phosphate uptake, metabolic adjustment, stress adaptation, and root growth regulation.
+
+Key genes identified in the short-term analysis included members of the PHT1 family, PEPC1, PPCK1, LEA14, LTI78/RD29A, GolS3, RAS1, XTH31, and ACS2.
+
+### Long-term Response
+
+The long-term response represents sustained adaptation to prolonged phosphate deficiency. Conserved genes were associated with root adaptation, shoot–root communication, internal phosphate recycling, membrane lipid remodeling, and phosphate acquisition.
+
+Key genes included PAP12, PAP14, PAP17, PAP25, NRT1.5, UMAMIT17, UMAMIT20, NAC003, NF-YA10, SWEET13, PHT1;8, RNS1, SQD1, SQD2, MGD2, and the candidate gene AT1G08440.
+
+### Integrated Response Model
+
+The integrated model summarizes the temporal transition from early stress signalling and metabolic adjustment during short-term phosphate starvation to sustained phosphate acquisition, internal phosphate recycling, nutrient homeostasis, and metabolic adaptation during long-term phosphate starvation.
+
+![Short-term Response](Short-term_Response.png)
+
+![Long-term Response](Long-term_Response.png)
+
+> **Note:** NAS3 is a known phosphate-starvation-responsive gene. The proposed involvement of AT1G08440 in malate-mediated rhizosphere phosphate mobilization is a hypothesis generated from the transcriptomic meta-analysis and has not been experimentally validated.
+
 
 ### 6. Overall Interpretation
 
@@ -228,10 +246,14 @@ Overall, this study provides insights into the temporal molecular mechanisms of 
 
 The repository is organized to document the major components of the transcriptomic meta-analysis.
 
-- `README.md` — Project overview, objectives, computational environment, workflow, results, hypothesis, and conclusion.
+- `README.md` — Project overview, objectives, study design, computational environment, workflow, results, hypothesis, and conclusion.
 - `24L10904(Akash Teradal)- final report.pdf` — Final MSc Bioinformatics dissertation report.
-- `results/` — Important analysis results and output files.
-
+- `results/` — Analysis results and output files.
+  - `DESeq2/` — Differential expression results.
+  - `PCA/` — Principal Component Analysis plots.
+  - `Volcano/` — Volcano plots.
+  - `Meta-analysis/` — InteractiVenn and conserved DEG intersection results.
+  - `ShinyGO/` — Gene Ontology Biological Process enrichment results.
 The transcriptomic datasets used in this study were obtained from publicly available resources and were processed for downstream analysis.
 
 
@@ -239,17 +261,16 @@ The transcriptomic datasets used in this study were obtained from publicly avail
 
 The RNA-seq datasets used in this study were obtained from the **NCBI Gene Expression Omnibus (GEO)** database.
 
-The GEO accessions included in the comparative transcriptomic meta-analysis were:
+Five independent RNA-seq datasets were analyzed from four GEO accessions:
 
 - GSE183312
-- GSE128250
+- GSE128250 (1 hour and 2 hours)
 - GSE217158
 - GSE278345
 
 The datasets represented different phosphate-starvation durations and tissues and were processed using the standardized bioinformatics workflow described in this repository.
 
 Detailed information about the datasets and their experimental conditions is provided in the final dissertation report.
-
 
 ## References
 
