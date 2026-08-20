@@ -177,9 +177,7 @@ Key genes included PAP12, PAP14, PAP17, PAP25, NRT1.5, UMAMIT17, UMAMIT20, NAC00
 
 The integrated model summarizes the temporal transition from early stress signalling and metabolic adjustment during short-term phosphate starvation to sustained phosphate acquisition, internal phosphate recycling, nutrient homeostasis, and metabolic adaptation during long-term phosphate starvation.
 
-![Short-term Response](Short-term_Response.png)
-
-![Long-term Response](Long-term_Response.png)
+[View Integrated Biological Interpretation Results](results/Biological-Interpretation/)
 
 > **Note:** NAS3 is a known phosphate-starvation-responsive gene. The proposed involvement of AT1G08440 in malate-mediated rhizosphere phosphate mobilization is a hypothesis generated from the transcriptomic meta-analysis and has not been experimentally validated.
 
