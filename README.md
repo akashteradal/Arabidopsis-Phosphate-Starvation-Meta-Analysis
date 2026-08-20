@@ -247,11 +247,13 @@ The repository is organized to document the major components of the transcriptom
 - `README.md` — Project overview, objectives, study design, computational environment, workflow, results, hypothesis, and conclusion.
 - `24L10904(Akash Teradal)- final report.pdf` — Final MSc Bioinformatics dissertation report.
 - `results/` — Analysis results and output files.
-  - `DESeq2/` — Differential expression results.
-  - `PCA/` — Principal Component Analysis plots.
-  - `Volcano/` — Volcano plots.
-  - `Meta-analysis/` — InteractiVenn and conserved DEG intersection results.
+  - `DESeq2/` — Differential expression results from the five RNA-seq datasets.
+  - `PCA/` — Principal Component Analysis plots for sample-level variation.
+  - `Volcano/` — Volcano plots showing differentially expressed genes.
+  - `Meta-analysis/` — InteractiVenn and conserved DEG intersection results for short-term and long-term responses.
   - `ShinyGO/` — Gene Ontology Biological Process enrichment results.
+  - `Biological-Interpretation/` — Integrated short-term and long-term phosphate-starvation response models.
+    
 The transcriptomic datasets used in this study were obtained from publicly available resources and were processed for downstream analysis.
 
 
