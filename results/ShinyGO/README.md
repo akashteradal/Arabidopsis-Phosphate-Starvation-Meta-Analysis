@@ -30,14 +30,6 @@ The conserved long-term genes were separated into:
 
 GO Biological Process enrichment was performed separately for the long-term upregulated and downregulated gene sets.
 
-## Enrichment Categories
-
-The analysis therefore included four independent enrichment analyses:
-
-- Short-term upregulated genes
-- Short-term downregulated genes
-- Long-term upregulated genes
-- Long-term downregulated genes
 
 ## Significance Threshold
 
